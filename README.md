@@ -4,8 +4,6 @@ This fork change the logo image component to a svg component.
 
 A QR Code generator for React Native based on react-native-svg and javascript-qrcode.
 
-Discussion: https://discord.gg/RvFM97v
-
 ## Features
 
 * Easily render QR code images
@@ -113,7 +111,7 @@ backgroundColor | 'white'        | Color of the background
 enableLinearGradient | false     | enables or disables linear gradient
 linearGradient  |  ['rgb(255,0,0)','rgb(0,255,255)']  | array of 2 rgb colors used to create the linear gradient
 gradientDirection| [170,0,0,0]  | the direction of the linear gradient
-logo | null        | Image source object. Ex. {uri: 'base64string'} or {require('pathToImage')}
+logo | null        | SVG object. Ex. {<Svg><Circle cx={10} cy={10} r={10} fill='red' /></Svg>} or {require('pathToImage.svg')}
 logoSize | 20% of size | Size of the imprinted logo. Bigger logo = less error correction in QR code
 logoBackgroundColor | backgroundColor        | The logo gets a filled quadratic background with this color. Use 'transparent' if your logo already has its own backdrop.
 logoMargin | 2 | logo's distance to its wrapper
