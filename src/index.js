@@ -20,6 +20,7 @@ const renderLogo = ({
   logoMargin,
   logoBorderRadius
 }) => {
+  const LogoSVG = logo;
   const logoPosition = (size - logoSize - logoMargin * 2) / 2
   const logoBackgroundSize = logoSize + logoMargin * 2
   const logoBackgroundBorderRadius =
@@ -54,13 +55,14 @@ const renderLogo = ({
         />
       </G>
       <G x={logoMargin} y={logoMargin}>
-        <Image
+        <LogoSVG width={logoSize} height={logoSize} />
+        {/* <Image
           width={logoSize}
           height={logoSize}
           preserveAspectRatio='xMidYMid slice'
           href={logo}
           clipPath='url(#clip-logo)'
-        />
+        /> */}
       </G>
     </G>
   )
